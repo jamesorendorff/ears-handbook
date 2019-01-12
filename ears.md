@@ -6,10 +6,15 @@
 > Roll to discover the best thing about it.
 >
 > 6 - The gameplay is fresh, fun, and chaotic.
+>
 > 5 - No one sits back and gets left out.
+>
 > 4 - You can teach new players all the rules and start a game in just minutes.
+>
 > 3 - The stories you create will take surprising turns every round.
+>
 > 2 - The players’ choices drive the action.
+>
 > 1 - Uhh... it's cheap? You can't think of another thing about EARS
 >     that's quite as amazing as the others here.
 >     But you can try again later, maybe after playing a few games...

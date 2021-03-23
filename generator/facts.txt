@@ -1,0 +1,9 @@
+bears have claws
+a bear can catch a fish
+bakers make cakes, pastries, and bread
+smiths make swords and forks
+smiths use hammers and tongs
+bakers use bowls and spatulas
+butchers make tenderloins, ribs, briskets, steaks, and filets
+butchers use knives (singular "knife")
+bakers, smiths, and butchers are people (singular "person")

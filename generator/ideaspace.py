@@ -1,0 +1,473 @@
+productions = {
+    'animal': [
+        # arthropods
+        'bee',
+        'ant',
+        'wasp',
+        'spider',
+        'lobster',
+        'crab',
+        'beetle',
+        # reptiles
+        'crocodile',
+        'snake',
+        'lizard',
+        'gecko',
+        # amphibians (?)
+        'chameleon',
+        'frog',
+        'bullfrog',
+        # fish
+        'fish',
+        'shark',
+        'koi',
+        'clownfish',
+        # birds
+        'bird',
+        'raven',
+        'eagle',
+        'hawk',
+        # mammals
+        'whale',
+        'orca',
+        'dolphin',
+        'hippo',
+        'wolf',
+        'deer',
+        'tiger',
+        'lion',
+        'bear',
+        'boar',
+        'panda',
+        'hyena',
+        'fox',
+    ],
+
+    'temperament': [
+        'blissed-out',
+        'angry',
+        'aggressive',
+        'controlling',
+        'comforting',
+        'cautious',
+        'rash',
+        'incompetent',
+        'nurturing',
+        'protective',
+        'rude',
+        'curious',
+        'scheming',
+        'shadowy',
+        'quiet',
+        'resolute',
+        'irresolute',
+        'playful',
+        'profane',
+        'gentle',
+        'thoughtful',
+    ],
+
+    'fashion': [
+        'clothes',
+        'hat',
+        'hair',
+        'tattoo',
+        'donation',
+        'prayer',
+        'art',
+    ],
+
+    'precious_stone': [
+        'ruby',
+        'emerald',
+        'sapphire',
+        'diamond',
+    ],
+    
+    'material': [
+        # metal
+        'metal',
+        'brass',
+        'bronze',
+        'iron',
+        'steel',
+
+        # mineral
+        'stone',
+        'crystal',
+        'marble',
+        'jade',
+        'quartz',
+        'obsidian',
+        'sandstone',
+        'coal',
+        'glass',
+        'ice',
+        '${precious_stone}',
+
+        # organic
+        'wooden',
+        'oaken',
+        'coral',
+
+        # other
+        'ceramic',
+        
+        '${element}',
+    ],
+
+    'element': [
+        'fire',
+        'river',
+        'zephyr',
+        'dust',
+        'rain',
+        'wind',
+        'snow',
+        'frost',
+        'bone',
+        'ice',
+        'tea',
+        'lava',
+        'bile',
+        'milk',
+        'wood',
+        'earth',
+        'soil',
+        'sand',
+        '${material}',
+    ],
+    
+    'monster_pre': [
+        'lumbering',
+        'giant',
+        'adorable',
+        'dancing',
+        'mysterious',
+        'tattooed',
+        'moss-covered',
+        'ancient',
+        'scarred',
+        'eroded',
+        '${material}',
+        '${temperament}',
+    ],
+    'monsters_noun': [
+        'armies',
+        'administrators',
+        'computers',
+        'zombies',
+        'goblins',
+        'giants',
+        'angels',
+        'demons',
+        'robots',
+        '${animal} people',
+        '${element} spirits',
+    ],
+    'monster_post': [
+        'waiting for the return of ${monsters}',
+        'with ${material} wings',
+        'suffused with magic',
+    ],
+    'monsters': [
+        '${monsters_noun}',
+        '${monster_pre} ${monsters_noun}',
+        '${monsters_noun} ${monster_post}',
+    ],
+    
+    'place_pre': [
+        'a strange',
+        'a strange ${material}',
+        'a secret',
+        'a sacred',
+        'an old',
+        'an old ${material}',
+        'an enchanted',
+        'a beloved',
+        'a dimly-lit',
+        'a candlelit',
+        'an underground',
+        'an unfinished',
+        'an elaborate',
+        'an ivy-covered',
+    ],
+
+    'place_noun': [
+        'cheese shop',
+        'coffee shop',
+        'bookshop',
+        'park',
+        'treehouse',
+        'fountain',
+        'temple',
+        'library',
+        'mosaic',
+        'alley',
+    ],
+
+    'places_complex': [
+        'universities',
+        'hospitals',
+        'libraries',
+        'airports',
+        'spaceports',
+        'rail depots',
+        'mines',
+        'cathedrals',
+        'temples',
+        'shrines',
+        'space stations',
+        'sky cities',
+        'bazaars',
+        'factories',
+        'market squares',
+        'power plants',
+
+        # governments
+        'city-states',
+    ],
+
+    'place_adjective': [
+        'labyrinthine',
+        'fortified',
+        'underground',
+        'floating',
+        'mechanized',
+        'utopian',
+
+        # alive
+        'throbbing',
+        'bustling',
+        'ever-changing',
+        'sentient',
+
+        # dead
+        'war-torn',
+        'sleepy',
+        'overgrown',
+        'defunct',
+        'abandoned',
+    ],
+
+    'grove_type': [
+        'orange',
+        'blood orange',
+        'mandarin orange',
+        'tangerine',
+        'lime',
+        'lemon',
+        'grapefruit',
+    ],
+
+    'pasture_type': [
+        # animal
+        'horse',
+        'sheep',
+        'cow',
+
+        # other
+        'green',
+        'muddy',
+        'frost-touched',
+    ],
+
+    'farm_type': [
+        'dairy',
+        'vegetable',
+        'poultry',
+        'pig',
+        'Christmas tree',
+    ],
+
+    'plantation_type': [
+        'banana',
+        'sugar',
+        'coffee',
+        'cocoa',
+    ],
+
+    'field_type': [
+        'corn',
+        'wheat',
+    ],
+
+    'places_field': [
+        '${field_type} fields',
+        'apple orchards',
+        'rice paddies',
+        '${pasture_type} pastures',
+        '${farm_type} farms',
+        '${grove_type} groves',
+        '${plantation_type} plantations',
+
+        'jungles',
+        'forests',
+        '${element} forests',
+        'cloud forests',
+        'oases',
+        'volcanoes',
+        'beaches',
+        'mountains',
+        'fjords',
+    ],
+
+    'places_post': [
+        'with ${feature}',
+        'with ${feature} and ${feature}',
+        'where ${monsters} once ${once_activity}',
+        'buried in ${material}',
+        'claimed by both ${people} and ${monsters}',
+        'far from the cities of the living',
+    ],
+
+    'place_or_places': [
+        '${places_field}',
+        '${place_pre} ${place_noun}',
+        '${places_complex}',
+        '${place_adjective} ${places_complex}',
+        '${places_complex} ${places_post}',
+        '${place_adjective} ${places_complex} ${places_post}',
+    ],
+
+    'tech': [
+        '${tech_noun}',
+    ],
+    'tech_noun': [
+        'sky cities',
+        'railroads',
+        'sailing ships',
+        'aqueducts',
+        'shrink rays',
+        'public transit by ${animal}',
+        'siege engines',
+        'crennelations',
+        'printing presses',
+        'trucks',
+        'electricity',
+    ],
+
+    'status': [
+        'starvation',
+        'poverty',
+        'opulence',
+        'oppression',
+        'crime',
+        'winter',
+        'drought',
+        'famine',
+        'plague',
+        'sarcasm',
+        'black humor',
+        'war',
+        'confusion',
+        'chaos',
+        'paranoia',
+
+        # light
+        'slanting light',
+        'twilight',
+        'darkness',
+        'candlelight',
+        'aurora borealis',
+    ],
+
+    'events_pre': [
+        'formal',
+        'drunken',
+        'raucus',
+        'primal',
+        'ostentatious',
+        'strange',
+        'ritual',
+        'harvest',
+    ],
+
+    'events_noun': [
+        'dances',
+        'festivals',
+        'fairs',
+        'ceremonies',
+        'harvests',
+        'funerals',
+        'processions',
+        'parties',
+        'weddings',
+    ],
+
+    'events': [
+        '${events_pre}, ${events_pre} ${events_noun}',
+        '${events_pre} ${events_noun}',
+        '${element} ${events_noun}',
+        '${events_pre} ${element} ${events_noun}',
+        '${events_noun} in ${place_or_places}',
+    ],
+
+    'people_noun': [
+        '${fashion} police',
+        'hooded figures',
+        'knights',
+        'monks',
+        'archivists',
+        'historians',
+        'librarians',
+        'musicians',
+        'bands',
+        'artisans',
+        'artists',
+        'misfits',
+        'beggars',
+        'shopkeepers',
+        'students',
+        'poets',
+        '${animal} people',
+    ],
+
+    'people': [
+        '${people_noun}',
+        '${temperament} ${people_noun}',
+        '${monsters}',
+    ],
+
+    'god': [
+        'the god of ${people}',
+        'the ${element} god',
+        'the god of ${status}',
+    ],
+    
+    'feature': [
+        '${people}',
+        '${monsters}',
+        '${place_or_places}',
+        '${tech}',
+        '${status}',
+        '${events}',
+        '${god}',
+    ],
+
+    'caves_noun': [
+        'burrows',
+        'caves',
+        'caverns',
+        'shelters',
+    ],
+
+    'once_activity': [
+        'lived',
+        'dwelt',
+        'dug ${place_adjective} ${caves_noun}',
+        'built ${place_or_places}',
+        'fought',
+        'slept',
+        'ruled',
+        'whispered',
+        'argued',
+        'held council',
+        'met',
+    ],
+
+    'idea': [
+        '${feature}',
+        '${feature}; ${idea}',
+    ],
+}
